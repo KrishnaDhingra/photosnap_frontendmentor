@@ -1,89 +1,60 @@
 <script>
   import { fade, fly } from 'svelte/transition';
-  import { createEventDispatcher } from 'svelte';
-  let active = false;
-
-  const dispatch = createEventDispatcher();
-
-	const toggleMobileNav = () => {
-    active = !active;
-    dispatch('headerStatus', {
-			status: active
-		});
-  };
+  export let active = false;
 </script>
 
-<button on:click={toggleMobileNav} class="button button--burger">
-  <svg class="menu{active ? ' active' : ''}" xmlns="http://www.w3.org/2000/svg" width="20" height="6"><g fill-rule="evenodd"><path d="M0 0h20v1H0zM0 5h20v1H0z"/></g></svg>
-  <svg class="close{active ? ' active' : ''}" xmlns="http://www.w3.org/2000/svg" width="16" height="15"><path fill-rule="evenodd" d="M14.718.075l.707.707L8.707 7.5l6.718 6.718-.707.707L8 8.207l-6.718 6.718-.707-.707L7.293 7.5.575.782l.707-.707L8 6.793 14.718.075z"/></svg>
-</button>
-
 {#if active}
-<div transition:fade class="full-screen-overlay"></div>
-{/if}
-
-{#if active}
-<div transition:fly="{{ y: 200, duration: 1000 }}" class="mobile-nav">
-  <ul class="mobile-nav-menu">
-    <li><a class="t-mobile-nav" href="stories">Stories</a></li>
-    <li><a class="t-mobile-nav" href="features">Features</a></li>
-    <li><a class="t-mobile-nav" href="pricing">Pricing</a></li>
-  </ul>
-  <a class="button button--cta-mobile" href="/">Get an invite</a>
+<div transition:fade class="full-screen-overlay">
+  <div in:fly="{{ y: -200, duration: 700 }}" out:fade class="mobile-nav">
+    <ul class="mobile-nav-menu">
+      <li><a class="t-mobile-nav" href="stories">Stories</a></li>
+      <li><a class="t-mobile-nav" href="features">Features</a></li>
+      <li><a class="t-mobile-nav" href="pricing">Pricing</a></li>
+    </ul>
+    <a class="button button--cta-mobile t-button" href="/">Get an invite</a>
+  </div>
 </div>
 {/if}
 
 <style>
-.button--burger {
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-  position: relative;
-  display: inline-block;
-}
+  .full-screen-overlay {
+    top: 7.2rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    position: fixed;
+    background-color: rgba(0, 0, 0, .50);
+  }
 
-.menu,
-.close {
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transition: var(--transition) opacity, var(--transition) transform;
-}
+  .mobile-nav {
+    left: 0;
+    right: 0;
+    top: 7.2rem;
+    width: 100%;
+    position: fixed;
+    padding: 3.2rem 0;
+    text-align: center;
+    background-color: var(--color-white);
+  }
 
-.menu {
-  opacity: 1;
-  transform: translate(-50%, -50%);
-}
+  .mobile-nav-menu {
+    margin: 0 auto;
+    width: 82.667%;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .25);
+  }
 
-.close {
-  opacity: 0;
-  transform: translate(-50%, -50%) rotate(90deg);
-  
-}
+  .mobile-nav-menu > li {
+    margin-bottom: 2rem;
+  }
 
-.close.active {
-  opacity: 1;
-  transform: translate(-50%, -50%) rotate(0);
-}
-
-.menu.active {
-  opacity: 0;
-  transform: translate(-50%, -50%) rotate(90deg);
-}
-
-.full-screen-overlay {
-  top: 7.2rem;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-  position: fixed;
-  background-color: rgba(0, 0, 0, .50);
-}
-
-.mobile-nav {
-  top: 7.2rem;
-  position: fixed;
-
-}
+  .button--cta-mobile {
+    width: 82.667%;
+    margin-top: 2rem;
+    padding: 1.4rem 0;
+    justify-content: center;
+    color: var(--color-white);
+    background-color: var(--color-black);
+  }
 </style>

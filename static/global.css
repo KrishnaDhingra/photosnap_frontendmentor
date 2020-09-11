@@ -1,6 +1,7 @@
 :root {
   /* Colors */
   --color-white: #fff;
+  --color-black: #000;
   
   /* Font Weights */
   --weight-regular: 400;
@@ -38,6 +39,16 @@ button {
   background: none;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 .sr-only {
   border: 0;
   width: 1px;
@@ -47,4 +58,35 @@ button {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(0px 0px 99.9% 99.9%);
+}
+
+/* Type Specs */
+.t-mobile-nav {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  letter-spacing: 2.5px;
+  color: var(--color-black);
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+}
+
+.t-button {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+}
+
+.t-white {
+  color: var(--color-white);
+}
+
+.t-black {
+  color: var(--color-black);
+}
+
+/* Buttons */
+.button {
+  display: inline-flex;
 }
