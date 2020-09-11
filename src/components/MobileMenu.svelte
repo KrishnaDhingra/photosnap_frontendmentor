@@ -1,10 +1,21 @@
 <script>
   import { fade, fly } from 'svelte/transition';
-  export let active = false;
+  import { acitve } from './stores.js';
+  
+  let active_status;
+
+  function updateActive() {
+    acitve.update((ac) => ac = !ac);
+  }
+
+  const unsubscribe = acitve.subscribe(value => {
+		active_status = value;
+  });
+  
 </script>
 
-{#if active}
-<div transition:fade class="full-screen-overlay">
+{#if active_status}
+<div on:click={updateActive} transition:fade class="full-screen-overlay">
   <div in:fly="{{ y: -200, duration: 700 }}" out:fade class="mobile-nav">
     <ul class="mobile-nav-menu">
       <li><a class="t-mobile-nav" href="stories">Stories</a></li>
