@@ -49,6 +49,14 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .sr-only {
   border: 0;
   width: 1px;
@@ -78,6 +86,32 @@ a {
   font-weight: var(--weight-bold);
 }
 
+.t-heading {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: .333rem;
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+}
+@media (min-width: 768px) {
+  .t-heading {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    letter-spacing: .417rem;
+  }
+}
+
+.t-body {
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  line-height: 2.5rem;
+  font-weight: var(--weight-regular);
+}
+
+.t-op6 {
+  opacity: .60;
+}
+
 .t-white {
   color: var(--color-white);
 }
@@ -89,4 +123,12 @@ a {
 /* Buttons */
 .button {
   display: inline-flex;
+}
+
+.button-cta-hero {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  line-height: 1.6rem;
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
 }

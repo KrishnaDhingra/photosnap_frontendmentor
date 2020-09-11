@@ -1,5 +1,6 @@
 <script>
 	import PageTransition from '../components/PageTransition.svelte';
+	import HomeHero from '../components/page_components/HomeHero.svelte';
 
 </script>
 <style>
@@ -11,11 +12,8 @@
 </svelte:head>
 
 <PageTransition>
+  <HomeHero/>
 
-  Create and share your photo Stories
-
-  Photosnap is a platform for photographers and visual storytellers. We make it 
-  easy to share photos, tell stories and connect with others.
 
   Beautiful stories every time
   
