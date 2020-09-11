@@ -1,0 +1,50 @@
+:root {
+  /* Colors */
+  --color-white: #fff;
+  
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-bold: 700;
+
+  /* Design elements */
+  --transition: 300ms ease-in-out;
+}
+
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: var(--weight-regular);
+  font-family: 'DM Sans', sans-serif;
+  background-color: var(--color-white);
+}
+
+button {
+  border: none;  
+  outline: none;
+  background: none;
+}
+
+.sr-only {
+  border: 0;
+  width: 1px;
+  padding: 0;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(0px 0px 99.9% 99.9%);
+}
