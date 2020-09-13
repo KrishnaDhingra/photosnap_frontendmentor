@@ -108,6 +108,20 @@ p {
   font-weight: var(--weight-regular);
 }
 
+.t-photoname {
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  line-height: 2.5rem;
+  font-weight: var(--weight-bold);
+}
+
+.t-photographer {
+  font-size: 1.3rem;
+  letter-spacing: 0;
+  line-height: 1.7rem;
+  font-weight: var(--weight-regular);
+}
+
 .t-op6 {
   opacity: .60;
 }

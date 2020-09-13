@@ -2,6 +2,7 @@
 	import PageTransition from '../components/PageTransition.svelte';
 	import HomeHero from '../components/page_components/HomeHero.svelte';
 	import HomeSec from '../components/page_components/HomeSec.svelte';
+	import HomeGallery from '../components/page_components/HomeGallery.svelte';
 
   const secTwoConfig = {
     left: false,
@@ -22,22 +23,7 @@
   <HomeHero/>
   <HomeSec/>
   <HomeSec sectionConfig={secTwoConfig} />
-
-  The Mountains
-  by John Appleseed
-  Read Story
-
-  Sunset Cityscapes
-  by Benjamin Cruz
-  Read Story
-
-  18 Days Voyage
-  by Alexei Borodin
-  Read Story
-
-  Architecturals
-  by Samantha Brooke
-  Read Story
+  <HomeGallery/>
 
   100% Responsive
 
