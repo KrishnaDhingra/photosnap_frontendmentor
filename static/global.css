@@ -108,7 +108,8 @@ p {
   font-weight: var(--weight-regular);
 }
 
-.t-photoname {
+.t-photoname,
+.t-feature-heading {
   font-size: 1.8rem;
   letter-spacing: 0;
   line-height: 2.5rem;

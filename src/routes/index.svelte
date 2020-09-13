@@ -3,6 +3,7 @@
 	import HomeHero from '../components/page_components/HomeHero.svelte';
 	import HomeSec from '../components/page_components/HomeSec.svelte';
 	import HomeGallery from '../components/page_components/HomeGallery.svelte';
+	import HomeFeatures from '../components/page_components/HomeFeatures.svelte';
 
   const secTwoConfig = {
     left: false,
@@ -24,19 +25,5 @@
   <HomeSec/>
   <HomeSec sectionConfig={secTwoConfig} />
   <HomeGallery/>
-
-  100% Responsive
-
-  No matter which the device you’re on, our site is fully responsive and stories 
-  look beautiful on any screen.
-
-  No Photo Upload Limit
-
-  Our tool has no limits on uploads or bandwidth. Freely upload in bulk and 
-  share all of your stories in one go.
-
-  Available to Embed
-
-  Embed Tweets, Facebook posts, Instagram media, Vimeo or YouTube videos, 
-  Google Maps, and more. 
+  <HomeFeatures/>
 </PageTransition>
