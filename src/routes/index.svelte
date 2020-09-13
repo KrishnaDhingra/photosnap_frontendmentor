@@ -1,7 +1,14 @@
 <script>
 	import PageTransition from '../components/PageTransition.svelte';
 	import HomeHero from '../components/page_components/HomeHero.svelte';
+	import HomeSec from '../components/page_components/HomeSec.svelte';
 
+  const secTwoConfig = {
+    left: false,
+    secName: 'designed',
+    heading: 'Designed for<br>everyone',
+    body: 'Photosnap can help you create stories that resonate with your audience.  Our tool is designed for photographers of all levels, brands, businesses you name it.'
+  }
 </script>
 <style>
 
@@ -13,22 +20,8 @@
 
 <PageTransition>
   <HomeHero/>
-
-
-  Beautiful stories every time
-  
-  We provide design templates to ensure your stories look terrific. Easily add 
-  photos, text, embed maps and media from other networks. Then share your story 
-  with everyone.
-
-  View the stories
-
-  Designed for everyone
-
-  Photosnap can help you create stories that resonate with your audience.  Our 
-  tool is designed for photographers of all levels, brands, businesses you name it. 
-
-  View the stories
+  <HomeSec/>
+  <HomeSec sectionConfig={secTwoConfig} />
 
   The Mountains
   by John Appleseed

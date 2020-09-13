@@ -125,10 +125,41 @@ p {
   display: inline-flex;
 }
 
-.button-cta-hero {
+.button-cta:hover {
+  text-decoration: underline;
+}
+
+.button-cta {
   font-size: 1.2rem;
   letter-spacing: 2px;
   line-height: 1.6rem;
   text-transform: uppercase;
   font-weight: var(--weight-bold);
+}
+@media (min-width: 700px) {
+  .button-cta {
+    width: 100%;
+    max-width: 38.7rem;
+  }
+}
+
+.button-cta::after {
+  content: '';
+  width: 4.2rem;
+  height: 1.2rem;
+  margin-left: 1.6rem;
+  background-size: cover;
+  transition: var(--transition) margin-left;
+  
+}
+
+.button-cta--white::after {
+  background-image: url(/images/shared/desktop/arrow-white.svg);
+}
+.button-cta--black::after {
+  background-image: url(/images/shared/desktop/arrow.svg);
+}
+
+.button-cta:hover::after {
+  margin-left: .8rem;
 }
