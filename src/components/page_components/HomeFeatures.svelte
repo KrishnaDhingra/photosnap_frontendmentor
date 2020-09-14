@@ -74,11 +74,11 @@
 
   .feature:nth-child(1) > .feature__heading,
   .feature:nth-child(3) > .feature__heading {
-    margin-top: 4.8rem;
+    margin-top: 4.4rem;
   }
   
   .feature:nth-child(2) > .feature__heading {
-    margin-top: 6.6rem;
+    margin-top: 6.2rem;
   }
 
   @media (min-width: 1024px) {

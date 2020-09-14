@@ -14,7 +14,7 @@
     <div class="homesec__content__wrap homesec__content__wrap--{sectionConfig.secName}">
       <h1 class="t-heading t-black homesec__content__heading">{@html sectionConfig.heading}</h1>
       <p class="t-body t-black t-op6 homesec__content__body">{sectionConfig.body}</p>
-      <a class="button button-cta button-cta--black t-black" href="/">View the stories</a>
+      <a class="button button-cta--section button-cta--black t-black" href="/">View the stories</a>
     </div>
   </div>
 </section>
@@ -138,7 +138,8 @@
   @media (min-width: 578px) {
     .homesec__content__body {
       margin-top: 2.1rem;
-      margin-bottom: 4.8rem;
+      letter-spacing: .05px;
+      margin-bottom: 4.3rem;
     }
   }
 </style>

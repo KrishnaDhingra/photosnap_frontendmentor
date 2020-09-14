@@ -45,6 +45,7 @@
     .container {
       margin: 0 auto;
       max-width: 111rem;
+      padding-left: .6rem;
       grid-template-columns: 17rem 25.5rem 1fr;
     }
   }
@@ -128,6 +129,12 @@
     transition: var(--transition) margin-left;
     background-image: url(/images/shared/desktop/arrow-white.svg);
   }
+  @media (min-width: 700px) {
+    .button--cta-footer::after {
+      margin-left: 1.6rem;
+    }
+  }
+
   .button--cta-footer:hover::after {
     margin-left: 1rem;
   }
@@ -150,6 +157,7 @@
   @media (min-width: 1024px) {
     .footer__cta {
       grid-column: 3/4;
+      margin-right: -.5rem;
     }
   }
 

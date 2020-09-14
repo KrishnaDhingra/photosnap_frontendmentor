@@ -88,11 +88,14 @@
 
   .hero__content__body {
     margin-top: 1.6rem;
+    letter-spacing: .07px;
     margin-bottom: 2.3rem;
   }
   @media (min-width: 700px) {
     .hero__content__body {
       max-width: 38.7rem;
+      margin-top: 2.1rem;
+      margin-bottom: 4.8rem;
     }
   }
 

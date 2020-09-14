@@ -164,7 +164,8 @@ p {
   text-decoration: underline;
 }
 
-.button-cta {
+.button-cta,
+.button-cta--section {
   font-size: 1.2rem;
   letter-spacing: 2px;
   line-height: 1.6rem;
@@ -178,14 +179,21 @@ p {
   }
 }
 
-.button-cta::after {
+.button-cta::after,
+.button-cta--section::after {
   content: '';
   width: 4.2rem;
   height: 1.2rem;
-  margin-left: 1.6rem;
   background-size: cover;
   transition: var(--transition) margin-left;
-  
+}
+
+.button-cta::after {
+  margin-left: 1.6rem;
+}
+
+.button-cta--section::after {
+  margin-left: 2.4rem;
 }
 
 .button-cta--white::after {
@@ -197,4 +205,8 @@ p {
 
 .button-cta:hover::after {
   margin-left: .8rem;
+}
+
+.button-cta--section:hover::after {
+  margin-left: 1.2rem;
 }

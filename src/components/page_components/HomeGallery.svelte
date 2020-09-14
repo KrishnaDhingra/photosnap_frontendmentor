@@ -135,7 +135,7 @@
     width: 100%;
     opacity: .25;
     height: .1rem;
-    margin: 1.6rem 0 2rem;
+    margin: 1.6rem 0 1.5rem;
     background-color: var(--color-white);
   }
   

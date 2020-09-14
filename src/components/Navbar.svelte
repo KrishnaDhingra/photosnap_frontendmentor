@@ -87,6 +87,13 @@
 			justify-content: space-between;
 		}
 	}
+	@media (min-width: 1024px) {
+		.top-nav-menu {
+			margin-right: auto;
+			margin-left: 25.1rem;
+		}
+	}
+
 	.top-nav-menu__item {
 		display: inline-flex;
 	}
