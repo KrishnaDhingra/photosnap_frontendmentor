@@ -17,11 +17,11 @@
 		<BurgerButton/>
 
 		<ul class="top-nav-menu">
-			<li><a class="t-top-nav" aria-current="{segment === 'stories' ? 'page' : undefined}" href="stories">Stories</a></li>
-			<li><a class="t-top-nav" aria-current="{segment === 'features' ? 'page' : undefined}" href="features">Features</a></li>
-			<li><a class="t-top-nav" aria-current="{segment === 'pricing' ? 'page' : undefined}" href="pricing">Pricing</a></li>
+			<li class="top-nav-menu__item"><a class="t-top-nav t-black" aria-current="{segment === 'stories' ? 'page' : undefined}" href="stories">Stories</a></li>
+			<li class="top-nav-menu__item"><a class="t-top-nav t-black" aria-current="{segment === 'features' ? 'page' : undefined}" href="features">Features</a></li>
+			<li class="top-nav-menu__item"><a class="t-top-nav t-black" aria-current="{segment === 'pricing' ? 'page' : undefined}" href="pricing">Pricing</a></li>
 		</ul>
-		<a class="button button--cta-top t-button" href="/">Get an invite</a>
+		<a class="button button--cta-top t-button t-white" href="/">Get an invite</a>
 	</nav>
 </header>
 <MobileMenu/>
@@ -31,6 +31,12 @@
 		height: 7.2rem;
 		position: static;
 		background-color: var(--color-white);
+	}
+	@media (min-width: 768px) {
+		.header {
+			padding-right: 4rem;
+			padding-left: 3.9rem;
+		}
 	}
 	.header.active {
 		position: relative;
@@ -46,6 +52,15 @@
 		justify-content: space-between;
 		background-color: var(--color-white);
 	}
+	@media (min-width: 768px) {
+		.container {
+			padding: 0;
+			margin: 0 auto;
+			max-width: 111rem;
+			justify-content: flex-start;
+		}
+	}
+
 	.container.active {
 		top: 0;
     left: 0;
@@ -62,9 +77,29 @@
 	.top-nav-menu {
 		display: none;
 	}
+	@media (min-width: 768px) {
+		.top-nav-menu {
+			width: 26.9rem;
+			margin-left: auto;
+			align-items: center;
+			margin-right: 5.1rem;
+			display: inline-flex;
+			justify-content: space-between;
+		}
+	}
+	.top-nav-menu__item {
+		display: inline-flex;
+	}
 
 	.button--cta-top {
 		display: none;
+	}
+	@media (min-width: 768px) {
+		.button--cta-top {
+			display: inline-flex;
+			padding: 1.2rem 2.4rem;
+			background-color: var(--color-black);
+		}
 	}
 
 	

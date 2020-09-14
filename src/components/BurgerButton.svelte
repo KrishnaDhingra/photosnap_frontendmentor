@@ -19,6 +19,11 @@
   position: relative;
   display: inline-block;
 }
+@media (min-width: 768px) {
+  .button--burger {
+    display: none;
+  }
+}
 
 .menu,
 .close {

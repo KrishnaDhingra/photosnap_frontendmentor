@@ -123,6 +123,14 @@ p {
   font-weight: var(--weight-regular);
 }
 
+.t-top-nav {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+}
+
 .t-op6 {
   opacity: .60;
 }

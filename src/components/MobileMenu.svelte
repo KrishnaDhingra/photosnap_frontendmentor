@@ -37,6 +37,11 @@
     position: fixed;
     background-color: rgba(0, 0, 0, .50);
   }
+  @media (min-width: 768px) {
+    .full-screen-overlay {
+      display: none;
+    }
+  }
 
   .mobile-nav {
     left: 0;
@@ -47,6 +52,11 @@
     padding: 3.2rem 0;
     text-align: center;
     background-color: var(--color-white);
+  }
+  @media (min-width: 768px) {
+    .mobile-nav {
+      display: none;
+    }
   }
 
   .mobile-nav-menu {
