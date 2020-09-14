@@ -98,6 +98,14 @@
 		display: inline-flex;
 	}
 
+	.t-top-nav {
+		transition: var(--transition) opacity;
+	}
+
+	.top-nav-menu__item:hover > .t-top-nav {
+		opacity: .30;
+	}
+
 	.button--cta-top {
 		display: none;
 	}
@@ -106,6 +114,11 @@
 			display: inline-flex;
 			padding: 1.2rem 2.4rem;
 			background-color: var(--color-black);
+			transition: var(--transition) background-color, var(--transition) color;
+		}
+		.button--cta-top:hover {
+			color: var(--color-black);
+			background-color: var(--color-gray);
 		}
 	}
 

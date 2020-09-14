@@ -94,6 +94,15 @@
   .footer__menu__item {
     display: inline-flex;
   }
+
+  .t-nav-footer {
+    transition: var(--transition) opacity;
+  }
+
+  .footer__menu__item:hover > .t-nav-footer {
+    opacity: .30;
+  }
+
   .footer__menu__item:not(:last-of-type) {
     margin-bottom: 1.9rem;
   }
