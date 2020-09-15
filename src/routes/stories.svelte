@@ -1,6 +1,6 @@
 <script>
 	import PageTransition from '../components/PageTransition.svelte';
-
+	import StoreisHero from '../components/page_components/StoreisHero.svelte';
 </script>
 
 <svelte:head>
@@ -8,17 +8,7 @@
 </svelte:head>
 
 <PageTransition>
-Last month's featured story
-
-Hazy full moon of Appalachia
-March 2nd 2020
-by John Appleseed
-
-The dissected plateau area, while not actually made up of geological mountains, 
-is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
-and while the ridges are not high, the terrain is extremely rugged.
-
-Read the story
+	<StoreisHero/>
 
 April 16th 2020
 The Mountains

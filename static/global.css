@@ -140,12 +140,30 @@ p {
   font-weight: var(--weight-regular);
 }
 
+.t-subheading {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-weight: var(--weight-bold);
+}
+
+.t-storyinfo {
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  font-weight: var(--weight-regular);
+}
+
 .t-op5 {
   opacity: .50;
 }
 
 .t-op6 {
   opacity: .60;
+}
+
+.t-op75 {
+  opacity: .75;
 }
 
 .t-white {
