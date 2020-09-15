@@ -1,6 +1,8 @@
 <script>
 	import PageTransition from '../components/PageTransition.svelte';
-
+	import CommHero from '../components/page_components/CommHero.svelte';
+	import CommCta from '../components/page_components/CommCta.svelte';
+	
 </script>
 
 <svelte:head>
@@ -8,10 +10,11 @@
 </svelte:head>
 
 <PageTransition>
-Features
-
-We make sure all of our features are designed to be loved by every aspiring and even 
-professional photograpers who wanted to share their stories.
+	<CommHero
+		heading={'Features'}
+		pageName={'features'}
+		subheading={'We make sure all of our features are designed to be loved by every aspiring and even professional photograpers who wanted to share their stories.'}
+	/>
 
 100% Responsive
 
@@ -42,8 +45,5 @@ Drag & Drop Image
 
 Easily drag and drop your image and get beautiful shots everytime. No over the top 
 tooling to add friction to creating stories.
-
-We're in Beta. Get your invite today!
-
-Get an invite
+	<CommCta/>
 </PageTransition>

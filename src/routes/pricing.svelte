@@ -1,6 +1,7 @@
 <script>
 	import PageTransition from '../components/PageTransition.svelte';
-
+  import CommHero from '../components/page_components/CommHero.svelte';
+  import CommCta from '../components/page_components/CommCta.svelte';
 </script>
 
 <svelte:head>
@@ -8,10 +9,12 @@
 </svelte:head>
 
 <PageTransition>
-  Pricing
-
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
+  <CommHero
+		heading={'Pricing'}
+		pageName={'pricing'}
+		subheading={'Create a your stories, Photosnap is a platform for photographers and visual storytellers. It’s the simple way to create and share your photos.'}
+	/>
+  
 
   Monthly
   Yearly
@@ -51,7 +54,5 @@
   Search Engine Indexing
   Custom Analytics
 
-  We're in Beta. Get your invite today!
-  
-  Get an invite
+  <CommCta/>
 </PageTransition>
