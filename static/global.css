@@ -10,6 +10,7 @@
 
   /* Design elements */
   --transition: 300ms ease-in-out;
+  --transition-slow: 600ms ease-in-out;
 }
 
 /* Reset */

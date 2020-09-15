@@ -1,4 +1,7 @@
-<section class="hero">
+<script>
+  let active = false;
+</script>
+<section class="hero{active ? ' active' : ''}">
   <div class="hero__image"></div>
   <div class="hero__content">
     <p class="t-subheading t-white">Last month's featured story</p>
@@ -10,7 +13,10 @@
     <p class="t-body t-white t-op6 story__body">The dissected plateau area, while not actually made up of geological mountains, 
     is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
     and while the ridges are not high, the terrain is extremely rugged.</p>
-    <a class="button button-cta button-cta--white t-white" href="/">Read the story</a>
+    <a
+      on:mouseenter="{() => active = true}"
+      on:mouseleave="{() => active = false}"
+      class="button button-cta button-cta--white t-white" href="/">Read the story</a>
   </div>
 </section>
 
@@ -27,10 +33,14 @@
       left: 0;
       bottom: 0;
       width: 50%;
+      opacity: 0;
       content: '';
       position: absolute;
-      /* opacity: 0.49; */
-      background-image: radial-gradient(0% 35%, #FFC593 0%, rgba(188,113,152,0.50) 38%, rgba(90,119,255,0.00) 73%);
+      transition: var(--transition-slow) opacity;
+      background-image: radial-gradient(ellipse at bottom left, #FFC593 0%, rgba(188,113,152,0.50) 38%, rgba(90,119,255,0.00) 73%);
+    }
+    .hero.active::before {
+      opacity: 0.49;
     }
   }
 
@@ -90,8 +100,4 @@
   .story__body {
     margin: 2.4rem 0;
   }
-
-  
-
-
 </style>
