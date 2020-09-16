@@ -69,7 +69,11 @@
     border-radius: 1.6rem;
     justify-content: flex-start;
     background-color: var(--color-gray);
-    transition: var(--transition) background-color;
+    transition: var(--transition) background-color, 360ms cubic-bezier(1.000, 0.075, 0.530, 0.910) transform;
+  }
+
+  .switcher:hover {
+    transform: scale(1.2);
   }
 
   .switcher::after {
@@ -105,6 +109,8 @@
   .t-switcher.active {
     opacity: .50;
   }
+
+
 
   .container {
     text-align: center;
