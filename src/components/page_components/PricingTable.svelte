@@ -30,6 +30,7 @@
   @media (min-width: 768px) {
     .compare__desktop {
       display: block;
+      padding-bottom: 11.2rem;
     }
   }
 
