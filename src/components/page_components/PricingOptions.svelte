@@ -123,6 +123,11 @@
       padding: 11.2rem 0;
     }
   }
+  @media (min-width: 768px) {
+    .container {
+      padding: 12rem 0 16rem;
+    }
+  }
 
   @media (min-width: 768px) {
     .pricing {
