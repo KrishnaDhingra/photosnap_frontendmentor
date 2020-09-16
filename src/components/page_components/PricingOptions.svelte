@@ -123,7 +123,7 @@
       padding: 11.2rem 0;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1200px) {
     .container {
       padding: 12rem 0 16rem;
     }
