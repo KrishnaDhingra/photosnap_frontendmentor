@@ -11,9 +11,9 @@
     <Socials/>
     <ul class="footer__menu">
       <li class="footer__menu__item"><a class="t-nav-footer t-white" href="/">Home</a></li>
-      <li class="footer__menu__item"><a class="t-nav-footer t-white" href="/">Stories</a></li>
-      <li class="footer__menu__item"><a class="t-nav-footer t-white" href="/">Features</a></li>
-      <li class="footer__menu__item"><a class="t-nav-footer t-white" href="/">Pricing</a></li>
+      <li class="footer__menu__item"><a class="t-nav-footer t-white" href="/stories">Stories</a></li>
+      <li class="footer__menu__item"><a class="t-nav-footer t-white" href="/features">Features</a></li>
+      <li class="footer__menu__item"><a class="t-nav-footer t-white" href="/pricing">Pricing</a></li>
     </ul>
     <a class="footer__cta button button--cta-footer t-white" href="/">Get an invite</a>
     <p class="footer__copyright t-copyright t-white t-op5">Copyright 2019. All Rights Reserved</p>

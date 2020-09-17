@@ -39,6 +39,12 @@
   }
   .table-heading {
     text-align: center;
+    margin-bottom: 6.4rem;
+  }
+  @media (min-width: 1200px) {
+    .table-heading {
+      margin-bottom: 5.6rem;
+    }
   }
 
   .plan__check {

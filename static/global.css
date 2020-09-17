@@ -200,7 +200,8 @@ p {
   display: inline-flex;
 }
 
-.button-cta:hover {
+.button-cta:hover,
+.button-cta--section:hover  {
   text-decoration: underline;
 }
 
@@ -258,6 +259,11 @@ p {
   padding: 1.2rem 0;
   justify-content: center;
   transition: var(--transition) background-color, var(--transition) color;
+}
+@media (min-width: 768px) {
+  .button--plan {
+    width: 27rem;
+  }
 }
 
 .button-white {
