@@ -1,4 +1,5 @@
 <section class="features">
+  <h2 class="sr-only">Features</h2>
   <div class="container">
     <div class="feature">
       <div class="feature__icon">

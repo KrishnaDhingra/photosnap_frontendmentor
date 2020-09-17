@@ -8,6 +8,7 @@
 </script>
 
 <section class="gallery">
+  <h2 class="sr-only">Gallery</h2>
   {#each photos as photo}
     <a class="photo" href="{photo.link}">
       <picture>
